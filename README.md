@@ -20,10 +20,12 @@ WGANs aim to address the instability and mode collapse issues commonly encounter
 <p align="center">
   <img width="460" height="300" src="https://github.com/prathamsingh7/chest_xray_image_synthesis/blob/main/images/GAN_comparison.png">
 </p>
+
 - ACGAN: 
 ACGANs enhance traditional GANs by incorporating an auxiliary classifier into the discriminator network, enabling the generation of conditional samples. In addition to distinguishing between real and fake samples, the discriminator in ACGANs also predicts the class labels of the samples, effectively guiding the generator to produce samples belonging to specific classes. This conditioning mechanism allows for the generation of labeled synthetic data, which is useful for tasks such as image-to-image translation and semi-supervised learning.
 - ACWGAN: 
 ACWGANs represent an advancement over ACGANs and WGANs, combining the benefits of both frameworks. Building upon the Wasserstein distance formulation of WGANs and the conditional generation capability of ACGANs, ACWGANs enable the synthesis of high-quality, labeled data with improved stability and fidelity. By incorporating auxiliary classifiers into the Wasserstein discriminator, ACWGANs produce conditional samples that not only closely match the target distribution but also adhere to the class labels specified during training.
+
 <p align="center">
   <img width="460" height="300" src="https://github.com/prathamsingh7/chest_xray_image_synthesis/blob/main/images/Working_of_GAN.png">
 </p>
